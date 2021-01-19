@@ -14,8 +14,12 @@ window.addEventListener("load", function () {
     var currenttime = document.querySelector("#currentTime");
     currenttime.innerHTML = time;
 
+})
 
+var saveOne = document.querySelector("#buttonOne");
 
-
+saveOne.addEventListener("click", function() {
+    console.log("button test");
+    console.log(inputOne.value);
 })
 

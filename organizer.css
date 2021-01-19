@@ -3,6 +3,36 @@ body {
     font-size: 16px;
     line-height: 1;
   }
+
+  #rowOne {
+      background-color: lightgray;
+  }
+
+  #rowTwo {
+      background-color: darkgray;
+  }
+
+  #rowThree {
+      background-color: lightgray;
+  }
+
+  #rowFour {
+      background-color: darkgray;
+  }
+
+  #rowFive {
+      background-color: lightgray;
+  }
+
+  #rowSix {
+      background-color: darkgray;
+  }
+
+  #rowSeven {
+      background-color: lightgray;
+  }
+
+  
   
   textarea{
     background: transparent;

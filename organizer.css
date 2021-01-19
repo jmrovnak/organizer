@@ -4,7 +4,11 @@ body {
     line-height: 1;
   }
 
-  #current {
+  #currentDate {
+      text-align: center;
+  }
+
+  #currentTime {
       text-align: center;
   }
 
@@ -33,6 +37,14 @@ body {
   }
 
   #rowSeven {
+      background-color: lightgray;
+  }
+
+  #rowEight {
+      background-color: darkgray;
+  }
+
+  #rowNine {
       background-color: lightgray;
   }
 

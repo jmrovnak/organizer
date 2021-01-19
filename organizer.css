@@ -12,6 +12,11 @@ body {
       text-align: center;
   }
 
+  #inputOne {
+      height: 78px;
+      width: 750px;
+  }
+
   #rowOne {
       background-color: lightgray;
   }

@@ -23,3 +23,5 @@ saveOne.addEventListener("click", function() {
     console.log(inputOne.value);
 })
 
+var input = document.querySelector("#inputOne").value;
+localStorage.setItem("input", input);

@@ -1,6 +1,12 @@
 var today = moment().format("MMMM Do YYYY");
 console.log(today);
 
+var date = document.querySelector("#current");
+window.addEventListener("load", function () {
+    current.innerHTML = today;
+});
+
+
 var time = moment().format("HH:MM");
 console.log(time);
 

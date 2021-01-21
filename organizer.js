@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
 var time = moment().format("HH:MM");
 console.log(time); //testing moment functionality
 
+//display time at page load
 window.addEventListener("load", function () {
     var now = document.querySelector("#now");
     now.innerHTML = time
@@ -68,4 +69,19 @@ store2.addEventListener("click", function () {
     localStorage.setItem("4:00", (blockEight.value));
  })
 
- 
+ // setting variables to retrieve from local storage
+ var local1 = localStorage.getItem("9:00");
+
+ var local2 = localStorage.getItem("10:00");
+
+ var local3 = localStorage.getItem("11:00");
+
+ var local4 = localStorage.getItem("12:00");
+
+ var local5 = localStorage.getItem("1:00");
+
+ var local6 = localStorage.getItem("2:00");
+
+ var local7 = localStorage.getItem("3:00");
+
+ var local8 = localStorage.getItem("4:00");

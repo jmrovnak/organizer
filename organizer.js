@@ -101,3 +101,6 @@ function store() {
     console.log(local7);
     console.log(local8);
 }
+
+var colorCode = parseInt(moment().format("HH"));
+console.log(colorCode);

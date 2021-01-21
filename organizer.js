@@ -39,7 +39,8 @@ var store8 = document.querySelector("#btnEight");
 // sending input to local storage
 store1.addEventListener("click", function () {
     localStorage.setItem("9:00", (blockOne.value));
-}) 
+   
+    }) 
 
 store2.addEventListener("click", function () {
     localStorage.setItem("10:00", (blockTwo.value));
@@ -85,3 +86,18 @@ store2.addEventListener("click", function () {
  var local7 = localStorage.getItem("3:00");
 
  var local8 = localStorage.getItem("4:00");
+
+// setting a function to grab local storage data on page reload
+window.addEventListener("load", store);
+
+// console testing above
+function store() {
+    console.log(local1);
+    console.log(local2);
+    console.log(local3);
+    console.log(local4);
+    console.log(local5);
+    console.log(local6);
+    console.log(local7);
+    console.log(local8);
+}

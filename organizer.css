@@ -15,11 +15,12 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: lightblue;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
+
 
 .description{
   white-space: pre-wrap;
@@ -37,8 +38,8 @@ textarea{
   border-top: 1px solid white;;
 }
 
-.hour {
-  background-color: #ffffff;
+.hourEl {
+  background-color: red;
   color: #000000;
   border-top: 1px dashed #000000;
 }

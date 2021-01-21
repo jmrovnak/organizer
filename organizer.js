@@ -10,6 +10,11 @@ window.addEventListener("load", function () {
 var time = moment().format("HH:MM");
 console.log(time); //testing moment functionality
 
+window.addEventListener("load", function () {
+    var now = document.querySelector("#now");
+    now.innerHTML = time
+})
+
 // setting variables for local storage
 var blockOne = document.querySelector("#blockOne");
 var blockTwo = document.querySelector("#blockTwo");
@@ -20,6 +25,7 @@ var blockSix = document.querySelector("#blockSix");
 var blockSeven = document.querySelector("#blockSeven");
 var blockEight = document.querySelector("#blockEight");
 
+
 var store1 = document.querySelector("#btnOne");
 var store2 = document.querySelector("#btnTwo");
 var store3 = document.querySelector("#btnThree");
@@ -29,7 +35,7 @@ var store6 = document.querySelector("#btnSix");
 var store7 = document.querySelector("#btnSeven");
 var store8 = document.querySelector("#btnEight");
 
-
+// sending input to local storage
 store1.addEventListener("click", function () {
     localStorage.setItem("9:00", (blockOne.value));
 }) 
@@ -61,3 +67,5 @@ store2.addEventListener("click", function () {
  store8.addEventListener("click", function () {
     localStorage.setItem("4:00", (blockEight.value));
  })
+
+ 

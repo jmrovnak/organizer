@@ -1,3 +1,8 @@
+
+
+
+
+
 var today = moment().format("MMMM Do YYYY"); 
 console.log(today); //testing moment functionality
 
@@ -36,56 +41,22 @@ var store6 = document.querySelector("#btnSix");
 var store7 = document.querySelector("#btnSeven");
 var store8 = document.querySelector("#btnEight");
 
-// sending input to local storage
-store1.addEventListener("click", function () {
-    localStorage.setItem("9:00", (blockOne.value));
-   
-    }) 
+// setting variables to retrieve from local storage
+var local1 = localStorage.getItem("9:00");
 
-store2.addEventListener("click", function () {
-    localStorage.setItem("10:00", (blockTwo.value));
- })
+var local2 = localStorage.getItem("10:00");
 
- store3.addEventListener("click", function () {
-    localStorage.setItem("11:00", (blockThree.value));
- })
+var local3 = localStorage.getItem("11:00");
 
- store4.addEventListener("click", function () {
-    localStorage.setItem("12:00", (blockFour.value));
- })
+var local4 = localStorage.getItem("12:00");
 
- store5.addEventListener("click", function () {
-    localStorage.setItem("1:00", (blockFive.value));
- })
+var local5 = localStorage.getItem("1:00");
 
- store6.addEventListener("click", function () {
-    localStorage.setItem("2:00", (blockSix.value));
- })
+var local6 = localStorage.getItem("2:00");
 
- store7.addEventListener("click", function () {
-    localStorage.setItem("3:00", (blockSeven.value));
- })
+var local7 = localStorage.getItem("3:00");
 
- store8.addEventListener("click", function () {
-    localStorage.setItem("4:00", (blockEight.value));
- })
-
- // setting variables to retrieve from local storage
- var local1 = localStorage.getItem("9:00");
-
- var local2 = localStorage.getItem("10:00");
-
- var local3 = localStorage.getItem("11:00");
-
- var local4 = localStorage.getItem("12:00");
-
- var local5 = localStorage.getItem("1:00");
-
- var local6 = localStorage.getItem("2:00");
-
- var local7 = localStorage.getItem("3:00");
-
- var local8 = localStorage.getItem("4:00");
+var local8 = localStorage.getItem("4:00");
 
 // setting a function to grab local storage data on page reload
 window.addEventListener("load", store);
@@ -102,5 +73,57 @@ function store() {
     console.log(local8);
 }
 
+// sending input to local storage, rendering in time block
+store1.addEventListener("click", function () {
+    localStorage.setItem("9:00", (blockOne.value));
+     document.querySelector("#blockOne").value = local1;
+    }) 
+
+store2.addEventListener("click", function () {
+    localStorage.setItem("10:00", (blockTwo.value));
+    document.querySelector("#blockTwo").value = local2;
+    
+ })
+
+ store3.addEventListener("click", function () {
+    localStorage.setItem("11:00", (blockThree.value));
+    document.querySelector("#blockThree").value = local3;
+    }) 
+
+
+ store4.addEventListener("click", function () {
+    localStorage.setItem("12:00", (blockFour.value));
+    document.querySelector("#blockFour").value = local4;
+    }) 
+
+
+ store5.addEventListener("click", function () {
+    localStorage.setItem("1:00", (blockFive.value));
+    document.querySelector("#blockFive").value = local5;
+    }) 
+
+
+ store6.addEventListener("click", function () {
+    localStorage.setItem("2:00", (blockSix.value));
+    document.querySelector("#blockSix").value = local6;
+    }) 
+
+
+ store7.addEventListener("click", function () {
+    localStorage.setItem("3:00", (blockSeven.value));
+    document.querySelector("#blockSeven").value = local7;
+    }) 
+
+
+ store8.addEventListener("click", function () {
+    localStorage.setItem("4:00", (blockEight.value));
+    document.querySelector("#blockEight").value = local8;
+    
+ })
+
+
+
 var colorCode = parseInt(moment().format("HH"));
 console.log(colorCode);
+
+
